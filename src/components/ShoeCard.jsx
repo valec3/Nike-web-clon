@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 
-// eslint-disable-next-line react/prop-types
 const ShoeCard = ({shoe,changeBigShoeImg,bigShoeImg}) => {
     const colorBorder = bigShoeImg === shoe.bigShoe ? "border-coral-red" : "border-transparent";
     const handlerClick = () => {
@@ -12,7 +12,7 @@ const ShoeCard = ({shoe,changeBigShoeImg,bigShoeImg}) => {
             onClick={handlerClick}
         >
             <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
-                <img src={shoe.thumbnail} alt="zapatilla" width={127} height={103} className="object-contain"/>
+                <img src={shoe.thumbnail} alt="zapatilla" width={127} height={103} className="object-contain pointer-events-none select-none"/>
             </div>
         </div>
     ) 
